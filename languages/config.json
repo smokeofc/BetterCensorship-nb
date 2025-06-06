@@ -8,5 +8,10 @@
     "name": "Test template",
     "country-code": "US",
     "filename": "test.json"
+  },
+  {
+    "name": "Norwegian",
+    "country-code": "NO",
+    "filename": "norwegian.json"
   }
 ]
