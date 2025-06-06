@@ -640,14 +640,14 @@
     })
 
     let dragOverHandler = function (e) {
-        //Shut up, browser.
+        // Prevent default browser drag behaviour.
         e.preventDefault();
     }
 
     let dropHandler = function (e) {
         let file
 
-        //Seriously, shut up, browser.
+        // Prevent default browser drag behaviour.
         e.preventDefault();
 
         if ((file = e.dataTransfer.files[0])) {
