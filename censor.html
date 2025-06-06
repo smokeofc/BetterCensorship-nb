@@ -898,8 +898,9 @@
                 let x = (offsetX*imageScalar);
                 let y = (offsetY*imageScalar)
                 let scalar = $("#zoomNumber").val();
+                let side = 300 / scalar;
 
-                zoomLens(ctx.getImageData(x-(300/scalar/2), y-(300/scalar/2), x+(300/scalar/2), y+(300/scalar/2)), 300/scalar, scalar);
+                zoomLens(ctx.getImageData(x-(side/2), y-(side/2), side, side), side, scalar);
             }
             if (globalIsDrawing) {
                 boardCurrentStateHolder = ctx.getImageData(0, 0, canvas.width, canvas.height);
